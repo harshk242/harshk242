@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Harsh Khatri 🤓;Computer Vision Engineer 📷;&font=Fira%20Code&center=true&width=400&height=50&duration=2000&pause=600" alt="Example Usage - README Typing SVG">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Harsh Khatri 🤓;Machine Learning Engineer 💻;&font=Fira%20Code&center=true&width=400&height=50&duration=2000&pause=600" alt="Example Usage - README Typing SVG">
 </p>
 
 # 💫 About Me:
