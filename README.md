@@ -5,7 +5,7 @@
 I build ML systems that go to production. Right now that means **AI agents and LLM applications** (RAG, MCP tool-calling agents, LLM observability) and **transformer-based demand forecasting** for retail. I've been in industry for over 5 years: I started as a software engineer on enterprise analytics products, then did computer vision research at BU before moving into applied ML. I like work where training the model and engineering the system around it both matter.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harsh242/)
-[![Website](https://img.shields.io/badge/Website-222222?style=flat-square&logo=githubpages&logoColor=white)](https://harshk242.github.io/)
+[![Website](https://img.shields.io/badge/Website-222222?style=flat-square&logo=githubpages&logoColor=white)](https://harsh242.com/)
 [![Substack](https://img.shields.io/badge/Substack-FF6719?style=flat-square&logo=substack&logoColor=white)](https://thedlcompass.substack.com/)
 [![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/harshkhatri242)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:harshkhatri242@gmail.com)
@@ -41,10 +41,6 @@ I build ML systems that go to production. Right now that means **AI agents and L
 **Frameworks:** PyTorch, Lightning, LangChain, LangGraph, MCP, Langfuse, OpenCV, MLflow, Prefect<br>
 **Languages:** Python, TypeScript/JavaScript, Java, C++, SQL<br>
 **Infra & data:** AWS (Batch, S3, EC2, ECR, Athena), GCP, Docker, CI/CD, PostgreSQL + pgvector, Iceberg, Superset
-
-## Publications
-
-- Co-author of two multi-omics studies of COVID-19 patient severity (proteomics + metabolomics, ML classification). IIT Bombay, 2021.
 
 ---
 
