@@ -1,27 +1,51 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Harsh Khatri 🤓;Machine Learning Engineer 💻;&font=Fira%20Code&center=true&width=400&height=50&duration=2000&pause=600" alt="Example Usage - README Typing SVG">
-</p>
+# Hi, I'm Harsh Khatri 👋
 
-# 💫 About Me:
-A proactive individual with a solid foundation in Programming, Computer Vision, and Machine Learning, I am passionate about tackling challenging problems and driving impactful solutions. Coming from a strong multi-disciplinary perspective attributable to my undergraduate in materials science, finance acumen & research in Computer Vision. Currently pursuing a Masters in Computer Science at Boston University. I am eager to apply my knowledge in Machine Learning and Computer Vision to contribute meaningfully to innovative projects and teams.<br><br>Seeking challenging roles in Machine Learning and Computer Vision.
+**Lead Machine Learning Engineer** at [Logile](https://www.logile.com) · Boston, MA · M.S. Computer Science, Boston University (4.0 GPA)
 
+I build ML systems that go to production. Right now that means **AI agents and LLM applications** (RAG, MCP tool-calling agents, LLM observability) and **transformer-based demand forecasting** for retail. I've been in industry for over 5 years: I started as a software engineer on enterprise analytics products, then did computer vision research at BU before moving into applied ML. I like work where training the model and engineering the system around it both matter.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/harsh242/) [![Substack](https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://thedlcompass.substack.com/) [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/harshkhatri242) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:harsh242@bu.edu)
-
-# 💻 Tech Stack:
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
-
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
-
-![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white) ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
-
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=harshk242&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=harshk242&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=harshk242&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harsh242/)
+[![Website](https://img.shields.io/badge/Website-222222?style=flat-square&logo=githubpages&logoColor=white)](https://harshk242.github.io/)
+[![Substack](https://img.shields.io/badge/Substack-FF6719?style=flat-square&logo=substack&logoColor=white)](https://thedlcompass.substack.com/)
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/harshkhatri242)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:harshkhatri242@gmail.com)
 
 ---
+
+## What I work on
+
+- **Enterprise agent platform:** I architected and shipped a shared agent harness built on LangGraph, with three agents running on it:
+  - a **RAG agent** over docs, tickets, SharePoint and wikis that cut knowledge-search time by 93%;
+  - an **employee self-service agent** built on workforce APIs through an MCP client / MCP server architecture, with 54 tools covering scheduling, availability, timesheets and staffing;
+  - a **Text-to-SQL analytics agent** that uses a semantic layer and SQL guardrails.
+
+  The harness handles identity and least-privilege tool access, typed delegation to sub-agents, and human approval before any write action. It also produces one Langfuse trace per turn, which helped cut hallucinations by 16%.
+- **Agent evaluation & improvement flywheel:** I built a complete evaluation pipeline for these agents. It starts by tracing every turn. Next it surfaces the traces worth reading: user feedback, frustration signals, outliers, clusters and a random sample. Errors from those traces become a failure taxonomy, which drives reference datasets and rubrics. Scoring goes from code checks to LLM-as-judge, with the judge calibrated against human labels. Each round's findings feed the next, so the agents keep improving.
+- **Forecasting at scale:** a transformer-based demand-forecasting model (+8%) trained with mixed precision on multiple GPUs. I also re-engineered a legacy pipeline so it runs 60% faster at half the cost.
+- **Computer vision & 3D:** research at BU on open-vocabulary 3D recognition, sim-to-real point-cloud classification, and synthetic training data from diffusion models.
+
+## Featured projects
+
+| Project | What it is | Context |
+|---|---|---|
+| [**BURP**](https://github.com/harshk242/burp) | A biomedical research agent that chains 10 public databases (UniProt, ChEMBL, Open Targets, ClinicalTrials.gov, …), maps identifiers between them, and cites every claim. Live at [tryburp.com](https://tryburp.com). | Personal · TypeScript, MCP, Vercel AI SDK, Langfuse |
+| [**my-agent-skills**](https://github.com/harshk242/my-agent-skills) | Agent skills I wrote for my own Claude Code workflow (structured HTML artifacts, multi-article synthesis, WhisperX transcription with diarization). | Personal · Agents tooling |
+| [**OpenShape3D**](https://github.com/harshk242/OpenShape3D) | A failure analysis of OpenShape, a zero-shot 3D shape recognizer: why it confuses categories, with coarse-to-fine fine-tuning, linear probes and hard-negative mining as fixes. | M.S. research, BU IVC Lab · PyTorch, CLIP |
+| [**sim2real-3d-classification**](https://github.com/harshk242/sim2real-3d-classification) | Took a point-cloud classifier's accuracy on real scans from 9.4% to 59.1% while training only on synthetic CAD data. | M.S. project, BU · CurveNet, point clouds |
+| [**synthetic-face-attributes**](https://github.com/harshk242/synthetic-face-attributes) | Generate faces with Stable Diffusion → filter them with few-shot foundation-model features → train a ResNet. Scores 99.5% on synthetic data and 82.3% on real photos it never trained on. | CV internship, Wicket |
+| [**robot-learning**](https://github.com/harshk242/robot-learning) | Teaching a car to drive in CarRacing three ways: imitation learning + DAgger, a modular perception-and-control pipeline, and RL with DQN and PPO. | M.S. coursework, BU · PyTorch, Gym |
+
+## Skills
+
+**ML / AI:** AI agents, agent harness design, agent evaluation, RAG, context engineering, LLM observability, Text-to-SQL, transformers, time-series forecasting, deep learning, computer vision, multimodal learning<br>
+**Frameworks:** PyTorch, Lightning, LangChain, LangGraph, MCP, Langfuse, OpenCV, MLflow, Prefect<br>
+**Languages:** Python, TypeScript/JavaScript, Java, C++, SQL<br>
+**Infra & data:** AWS (Batch, S3, EC2, ECR, Athena), GCP, Docker, CI/CD, PostgreSQL + pgvector, Iceberg, Superset
+
+## Publications
+
+- Co-author of two multi-omics studies of COVID-19 patient severity (proteomics + metabolomics, ML classification). IIT Bombay, 2021.
+
+---
+
+<sub>I write about deep learning at <a href="https://thedlcompass.substack.com/">The DL Compass</a>.</sub>
